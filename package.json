@@ -1,5 +1,5 @@
 {
-    "name": "typescript-starter",
+    "name": "@iwharris/typescript-starter",
     "version": "0.0.1",
     "description": "Typescript Starter",
     "main": "dist/index.js",
