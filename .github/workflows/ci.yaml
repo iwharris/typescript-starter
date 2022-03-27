@@ -33,11 +33,9 @@ jobs:
           cache: 'npm'
 
       - name: Install packages
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: npm install
       
       - name: Compile Typescript
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
         run: npm run compile
 
       - name: Run unit tests with coverage
