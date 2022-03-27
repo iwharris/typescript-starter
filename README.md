@@ -1,7 +1,7 @@
 # typescript-starter
 
 [![codecov](https://codecov.io/gh/iwharris/typescript-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/iwharris/typescript-starter)
-[![CircleCI](https://circleci.com/gh/iwharris/typescript-starter.svg?style=svg)](https://circleci.com/gh/iwharris/typescript-starter)
+![Build](https://github.com/iwharris/typescript-starter/actions/workflows/ci.yaml/badge.svg)
 
 Boilerplate repo for personal Typescript projects
 

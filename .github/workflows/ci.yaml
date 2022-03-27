@@ -33,16 +33,15 @@ jobs:
         run: npm run compile
 
       - name: Run unit tests with coverage
-        # You may pin to the exact commit or the version.
-        # uses: mattallty/jest-github-action@43bbcd073fa43a927322f188220b6592acae003b
-        uses: mattallty/jest-github-action@v1.0.3
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run test:coverage
+
+      # TODO: optionally send coverage report to codecov
+
+      # Generate a coverage report on the PR
+      # https://github.com/marketplace/actions/code-coverage-report
+      - name: Code Coverage Report
+        uses: romeovs/lcov-reporter-action@v0.2.11
         with:
-          # The test command to run
-          test-command: npm run test:ci
-          working-directory: coverage
-          # Comment PRs with code coverage
-          coverage-comment: true
-          # Only run tests on changed files (over base branch)
-          changes-only: false
+          delete-old-comments: true
+          title: Code Coverage Report
+
