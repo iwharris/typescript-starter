@@ -35,10 +35,13 @@ jobs:
       - name: Run unit tests with coverage
         run: npm run test:coverage
 
-      # TODO: optionally send coverage report to codecov
-
       # Generate a coverage report on the PR
-      # https://github.com/marketplace/actions/code-coverage-report
-      - name: Code Coverage Report
-        uses: romeovs/lcov-reporter-action@v0.2.11
+      - uses: codecov/codecov-action@v2
+        # with:
+          # token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
+          # files: ./coverage1.xml,./coverage2.xml # optional
+          # flags: unittests # optional
+          # name: codecov-umbrella # optional
+          # fail_ci_if_error: true # optional (default = false)
+          # verbose: true # optional (default = false)
 
