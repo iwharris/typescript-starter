@@ -9,6 +9,7 @@
         "prettier:fix": "prettier --write {src,test}/**/*.[jt]s",
         "test": "jest",
         "test:coverage": "jest --coverage",
+        "test:ci": "jest --coverage --json --outputFile=coverage/jest.results.json",
         "watch": "tsc -w"
     },
     "repository": {
