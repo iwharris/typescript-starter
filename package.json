@@ -3,10 +3,6 @@
     "version": "0.0.1",
     "description": "Typescript Starter",
     "main": "dist/index.js",
-    "engines": {
-        "npm": ">=8.1.0",
-        "node": ">=16.0.0"
-    },
     "scripts": {
         "compile": "tsc",
         "prettier": "prettier --check {src,test}/**/*.[jt]s",
