@@ -11,7 +11,7 @@ Boilerplate repo for personal Typescript projects
 | -------------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------- |
 | [Jest](https://jestjs.io/)                                     | Test Framework         | Using [ts-jest](https://github.com/kulshekhar/ts-jest) for JIT compilation |
 | [Prettier](https://prettier.io/)/[ESLint](https://eslint.org/) | Code style & linting   |
-| [CircleCI](https://circleci.com/)                              | Continuous Integration | Supports publishing to NPM                                                 |
+| [GitHub Actions](https://github.com/features/actions)          | Continuous Integration |
 | [Codecov](https://codecov.io/)                                 | Code coverage tracking |
 
 ## Usage
@@ -47,11 +47,6 @@ npm run test:coverage
 ```
 
 ### CI/CD
-
-To set up CircleCI integration, set the following env vars on the CircleCI project:
-
--   `NPM_TOKEN`: auth token granting publish access
--   `CODECOV_TOKEN`: token for Codecov
 
 To publish a new version to npm:
 
